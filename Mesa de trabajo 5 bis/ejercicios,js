@@ -1,0 +1,59 @@
+//1.map( )
+//Ejercicio 1:
+let numeros = [1, 2, 3, 4, 5];
+let numeroMultiplicado = numeros.map(function (numero) {
+  return numero * 2;
+});
+console.log(numeroMultiplicado);
+
+//Ejercicio 2
+let frutas = ["apple", "banana", "cherry"];
+let cantidadDeLetras = frutas.map(function (fruta) {
+  return fruta.length;
+});
+console.log(cantidadDeLetras);
+
+//ejercicio 3
+let minusculas = ["hello", "world"];
+let mayusculas = minusculas.map(function (minuscula) {
+  return minuscula.toUpperCase();
+});
+console.log(mayusculas);
+
+//2. filter( )
+//ejercicio 1
+let numeros2 = [10, 20, 30, 40, 50];
+let numerosMayores = numeros2.filter(function (num) {
+  return num > 25;
+});
+console.log(numerosMayores);
+
+//ejercicio 2
+let frutas2 = ["apple", "banana", "cherry", "date"];
+let masDeCincoLetras = frutas2.filter(function (fruta2) {
+  return fruta2.length > 5;
+});
+console.log(masDeCincoLetras);
+
+//3. reduce( )
+//ejercicio 1
+
+let sumaNumeros = numeros.reduce(function (acumulador, numero) {
+  return acumulador + numero;
+});
+console.log(sumaNumeros);
+
+//ejercicio 2
+
+let multiplicarNumeros = numeros.reduce(function (acumulador, numero) {
+  return acumulador * numero;
+});
+console.log(multiplicarNumeros);
+
+//ejercicio 3
+
+let palabras = ["Hello", " ", "World", "!"];
+let juntarPalabras = palabras.reduce(function (acumulador, palabra) {
+  return acumulador + palabra;
+});
+console.log(juntarPalabras);
